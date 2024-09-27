@@ -1,32 +1,35 @@
 <html>
 
 <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="util.css">
     <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 1280px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
         .header {
             background-color: #A87676;
             height: 100px;
             display: flex;
-            justify-content: center;
-            flex-direction: row-reverse;
-            justify-content: space-between;
+            /* justify-content: center; */
         }
+
         .header img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             margin: 4px;
         }
+
         .header h1 {
             margin-bottom: 10px;
+        }
+
+        .header .item {
+            display: flex;
+            flex: 1;
+        }
+
+        .header .right-head {
+            display: flex;
+            justify-content: flex-end;
         }
 
         .about-me {
@@ -35,26 +38,71 @@
 
         .content {
             background-color: #E1ACAC;
-            height: 1020px;
+            height: 1280px;
+        }
+
+        .content img {
+            height: 800px;
+            width: 800px;
+            object-fit: contain;
+        }
+
+        .photos {
+            display: flex;
+            flex-direction: row;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="flex flex-col w-full">
         <!-- <div class="header">hello</div> -->
         <div class="header">
-            <img src="./imgs/S__8028463.jpg">
-            <h1> ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀@NN_NNY104</h1>
+            <div class="item">
+                <h1>@NN_NNY104</h1>
+            </div>
+            <div class="item">
+                <audio controls autoplay loop>
+                    <source src="./music/Sean Kingston - Beautiful Girls (Official HD Video).mp3" type="audio/mpeg">
+                    <!-- Add additional <source> elements for other formats -->
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="item right-head">
+                <img src="./imgs/IMG_8356.JPG">
+            </div>
         </div>
-            <div class="about-me"><h2> ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ About Me</h2></div>
+        <div class="about-me">
+            <h2> About Me:</h2>
+        </div>
         <div class="content">
             <div>
-                <img>
+                <p style="background-color:#FFD0D0;">
+                    畢業於巨人高中:</p>
             </div>
-            <div></div>
+            <div class="photos">
+                <img src="./imgs/IMG_2703.JPG">
+                <img src="./imgs/instc 2024-06-05 151400.161.jpg">
+                <img src="./imgs/instc 2024-06-05 113624.218.jpg">
+            </div>
+            <p style="background-color:#FFD0D0;">正在準備重考人生:</p>
+            <ul>
+                <li>學習基本電學、電子學</li>
+                <li>學習程式</li>
+                <li>學習設計個人網頁</li>
+            </ul>
+            <p style="background-color:#FFD0D0;">
+                喜歡做的事:
+            <ul>
+                <li>聽歌</li>
+            </ul>
+            </p>
+
         </div>
+
+    </div>
+    </div>
     </div>
 
 </body>
